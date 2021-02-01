@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Bodoni+Moda:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Potta+One:regular&display=swap&subset=cyrillic-ext");
+
+/* Ниже надо прикрепить шрифты из папки */
+
+@font-face {
+	font-family: "Comic Sans MS";
+	src: url("../fonts/ComicSansMS.woff2") format("woff2"), url("ComicSansMS.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bebas Neue Cyrillic";
+	src: url("../fonts/BebasNeueCyrillic.woff2") format("woff2"), url("BebasNeueCyrillic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Обнуляем стили */
+/* Обращаемся ко всему с помощью "*" */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* ТОчки стиля списков */
+li {
+	list-style: none;
+}
+/* Ссылки */
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+/* Заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/* Фантомный отступ у картинок */
+img {
+	vertical-align: top;
+}
+body {
+	color: #000;
+	font-family: montserrat300, montserrat, serif;
+	font-size: 14px;
+}
+/* Дальше мы назначаем стили объектам */
+.potta {
+	font-family: "Potta One";
+	font-size: 100px;
+	font-weight: 800;
+	color: magenta;
+	text-shadow: 10px 10px 10px yellow, -10px -10px 5px lawngreen;
+}
+p.comix {
+	font-family: "Comic Sans MS";
+	font-size: 30px;
+	font-weight: 700;
+	color: tomato;
+	text-shadow: 5px 0px 5px green, -5px 0px 5px orange, 0px -5px 5px blueviolet, 0px 5px 5px lightskyblue;
+}
+.bebas {
+	font-family: "bebas neue cyrillic";
+	font-size: 40px;
+	font-style: italic;
+	color: white;
+	text-shadow: 1px 1px 1px black, -1px -1px 1px red;
+}
+.ddd {
+	font-weight: 900;
+	font-size: 40px;
+	color: rgba(245, 245, 245, 0);
+	text-shadow: 1px 1px 2px rgba(135, 206, 250, 0.486), -1px -1px 2px rgba(255, 99, 71, 0.596);
+	letter-spacing: 30px;
+}
+.shadow3 {
+	text-shadow: 50px 0px 1px black, 100px 0px 1px red, 150px 0px 1px yellow, 200px 0px 1px blue, 250px 0px 1px green,
+		300px 0px 1px brown;
+}
+.times {
+	font-family: "Times New Roman", Times, serif;
+	font-style: 20px;
+}
+.cursive {
+	font-family: "Bodoni Moda";
+	font-size: 20px;
+}
+.fantasy {
+	font-family: "Potta One";
+	font-size: 20px;
+}
+h1 {
+	font-family: "Potta One";
+	/* ВОПРОС - ПОЧЕМУ ЗАДАННЫМ ШРИФТОМ ОТОБРАЖАЕТСЯ ТОЛЬКО ЛАТИНИЦА ? */
+	color: blue;
+	font-weight: 900;
+	font-size: 50px;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 800;
+	font-style: italic;
+}
+h3 {
+	font-family: "Bebas Neue Cyrillic";
+	font-size: 40px;
+	font-weight: 700;
+	color: green;
+}
+.header {
+	font-size: 20px;
+}
+.through {
+	text-decoration: line-through;
+	color: orange;
+}
+.block {
+	color: red;
+}
+.head {
+	text-decoration: underline;
+}
+/* .menu {
+	color: greenyellow;
+} бесполезный класс */
+.item {
+	text-decoration: overline;
+}
+.main {
+	color: teal;
+}
+.fontss {
+	color: slategrey;
+}
+.text a {
+	text-decoration: underline;
+}
+.h {
+	font-family: "Bodoni Moda";
+	font-size: 36px;
+}
+.italic {
+	font-style: italic;
+}
+.oblique {
+	font-style: oblique;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.spann .uppercase {
+	color: yellowgreen;
+	font-style: italic;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 10px;
+}
+.w100 {
+	font-weight: 100;
+}
+.w200 {
+	font-weight: 200;
+}
+.w300 {
+	font-weight: 300;
+}
+.w400 {
+	font-weight: 400;
+}
+.w500 {
+	font-weight: 500;
+}
+.w600 {
+	font-weight: 600;
+}
+.w700 {
+	font-weight: 700;
+}
+.w800 {
+	font-weight: 800;
+}
+.w900 {
+	font-weight: 900;
+}
+.textt {
+	font-family: "Bodoni Moda";
+	font-size: 20px;
+}
+.color {
+	color: black;
+}
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.center {
+	text-align: center;
+}
+.justify {
+	text-align: justify;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.decoration {
+	text-decoration: line-through overline underline;
+}
+.overline {
+	text-decoration: overline;
+}
+.underline {
+	text-decoration: underline;
+}
+/* .noneline {
+} */
+.shadow1 {
+	text-shadow: 1px 1px 1px #000;
+}
+.shadow2 {
+	text-shadow: 1px 1px 1px #000, -5px 3px 2px red;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+/* .nonecase {
+} */
+.lineheight {
+	color: brown;
+	line-height: 100px;
+}
+.whitespace {
+	white-space: nowrap;
+}
+.letterspacing {
+	letter-spacing: 10px;
+}
+.wordspacing {
+	word-spacing: 20px;
+}
+.textindent {
+	text-indent: 50px;
+}
+/* Стили с прошлого урока */
+/* p {
+	color: red;
+}
+.lesson {
+	color: blue;
+}
+p.text {
+	color: green;
+}
+.text.marker {
+	color: yellow;
+}
+#lesson3 {
+	color: magenta;
+}
+h2 {
+	color: orange;
+}
+.list {
+	color: maroon;
+}
+.list.text {
+	color: mediumspringgreen;
+}
+#list3 {
+	color: olive;
+}
+span {
+	color: purple;
+}
+span.lesson.span {
+	color: peru;
+}
+header span {
+	color: seagreen;
+}
+span.black {
+	color: black;
+} */
